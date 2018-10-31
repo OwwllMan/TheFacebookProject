@@ -1,24 +1,41 @@
-# README
+# The Facebook Project - 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Production : https://thegossipprojectstrasbourg.herokuapp.com/
 
-Things you may want to cover:
+## 📰 The content
 
-* Ruby version
+we created a application with backend and a database the app have to look like facebook .
 
-* System dependencies
+**After cloning the repository, make sure to do :**
 
-* Configuration
+```sh
+$ cd TheFacebookProject
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+```
+This will install all the dependencies needed for the exercises and create the database.
 
-* Database creation
 
-* Database initialization
+## 💎 Gems
 
-* How to run the test suite
+in this project we use : 
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+source "https://rubygems.org"
+rails '5.2.1'
+```
 
-* Deployment instructions
+you can find all the gems in the Gemfile in this directory : 
 
-* ...
+TheFacebookProject/Gemfile
+
+## :european_post_office: The Strasbourg Crew 💪
+Done with @zOmegad, @BrokenPirate, @mxrch, @Runefire32, and myself @OwwllMan
+
+<hr>
+
+***It's an exercise from the TheHackingProject bootcamp.***
+
+***> www.thehackingproject.org***
+
