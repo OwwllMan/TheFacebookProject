@@ -1,6 +1,6 @@
-# The Facebook Project - 
+# The Facebook Project - 🇫🇷
 
-### Production : https://thegossipprojectstrasbourg.herokuapp.com/
+### 💾 Production : https://thegossipprojectstrasbourg.herokuapp.com/
 
 ## 📰 The content
 
