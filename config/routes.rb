@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
   root to: 'statique#home'
 
   get '/', to: 'statique#home'
@@ -14,6 +15,12 @@ Rails.application.routes.draw do
   get 'user/edit'
   get 'user/show'
   get 'statique/home'
+
+  get'connexion', to: 'sessions#new'
+  post'connexion', to: 'sessions#create'
+  delete'déconnexion', to: 'sessions#destroy'
+
+
 
   get 'user', to: 'user#new'
   post 'user', to: 'user#create'
