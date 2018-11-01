@@ -26,6 +26,9 @@ class UserController < ApplicationController
 
   def show
   	@user = User.find(params[:id])
+  	@username = User.find_by(username: params[:username]).username
+  	@email = User.find_by(username: params[:username]).email
+  	@id = User.find_by(username: params[:username]).id
   end
 
   private
