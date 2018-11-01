@@ -15,7 +15,10 @@ Rails.application.routes.draw do
   get 'user/show'
   get 'statique/home'
 
-  resources :posts
-  resources :users
-  resources :comments
+  get 'user', to: 'user#new'
+  post 'user', to: 'user#create'
+  #get 'user/:username', to: 'user#show', as: 'show'
+  get '/confirm', to: 'user#confirm'
+
+  
 end

@@ -1,11 +1,23 @@
 class UserController < ApplicationController
   def new
-  	@user = User.new
+  	
+  end
+
+  def confirm
+
+  end
+
+  def index
+    @user = User.all
   end
 
   def create
-    @user = User.create(post_params)
-    redirect_to '/'
+    @user = User.create(username: params[:username],email: params[:email],password: params[:password])
+    if !@user.valid?
+      redirect_to '/error'
+    else
+      redirect_to '/confirm'
+    end
   end
 
   def edit
@@ -25,16 +37,14 @@ class UserController < ApplicationController
   end
 
   def show
-  	@user = User.find(params[:id])
   	@username = User.find_by(username: params[:username]).username
   	@email = User.find_by(username: params[:username]).email
-  	@id = User.find_by(username: params[:username]).id
   end
 
   private
 
   def post_params
-    params.require(:user).permit(:username,:email,:password)
+    params.require(:users).permit(:username,:email,:password)
   end
 
 end

@@ -49,6 +49,7 @@
 .main-title{
   margin-top:50px;
   margin-bottom:50px;
+  text-align:center;
 }
 
 .card{
@@ -56,6 +57,30 @@
   margin-bottom:10px;
   padding-top:20px; 
 }
+  
+/* ALL */
+
+#ins{
+  float:right;
+  margin-right:350px;
+  -moz-box-shadow: 3px 4px 0px 0px #899599;
+  -webkit-box-shadow: 3px 4px 0px 0px #899599;
+  box-shadow: 3px 4px 0px 0px #899599;
+}
+
+#con{
+  float:left;
+  margin-left:350px;
+  -moz-box-shadow: 3px 4px 0px 0px #899599;
+  -webkit-box-shadow: 3px 4px 0px 0px #899599;
+  box-shadow: 3px 4px 0px 0px #899599;
+}
+
+.container-cent{
+  margin-top:200px;
+}
+
+/* ALL */
 
 /* FOOTER */
 

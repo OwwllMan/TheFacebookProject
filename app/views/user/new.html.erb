@@ -1,5 +1,5 @@
-<h1 class="main-title">Bienvenue à toi dans la création de compte</h1>
-<form action = "/users" method="post">
+<h1 class="main-title">Bienvenue à toi dans la création de compte <i class="em em-newspaper"></i></h1>
+<form action = "/username" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"><br>
   <label for="username">Ton Prénom : </label>
     <input class="form-control" name="username" id="username" placeholder="Prénom">
@@ -13,5 +13,5 @@
     <input class="form-control" id="password" name ="password" rows="3" placeholder="Mot de passe"></input>
   <small id="emailHelp" class="form-text text-muted"></small>
  <br>
-   <button type="submit" class="btn btn-primary">Créer mon profil <i class="em em-fire"></i></button>
+   <button type="submit" class="btn btn-success">Créer mon profil</button>
 </form>
