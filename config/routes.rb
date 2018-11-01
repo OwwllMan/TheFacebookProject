@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to: 'statique#home'
+
   get 'post/new'
   get 'post/edit'
   get 'post/show'
